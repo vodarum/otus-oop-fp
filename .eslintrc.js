@@ -26,6 +26,7 @@ module.exports = {
         tsx: "never",
       },
     ],
+    "no-plusplus": "off",
   },
   settings: {
     "import/resolver": {
