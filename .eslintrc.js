@@ -13,8 +13,9 @@ module.exports = {
   },
   plugins: ["@typescript-eslint", "jest"],
   rules: {
-    "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
+    "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/no-var-requires": "off",
+    "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
     "import/extensions": [
       "error",
       "ignorePackages",
