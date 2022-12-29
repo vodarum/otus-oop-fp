@@ -15,5 +15,22 @@ module.exports = {
   rules: {
     "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
     "@typescript-eslint/no-var-requires": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        js: "never",
+        jsx: "never",
+        ts: "never",
+        tsx: "never",
+      },
+    ],
+  },
+  settings: {
+    "import/resolver": {
+      node: {
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
+    },
   },
 };
