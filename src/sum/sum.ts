@@ -5,7 +5,7 @@ export default function sum(value?: number) {
     s += newValue;
 
     return sum(s);
-  };
+  }
 
   foo.valueOf = () => s;
 
