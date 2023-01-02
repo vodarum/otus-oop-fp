@@ -27,6 +27,8 @@ module.exports = {
       },
     ],
     "no-plusplus": "off",
+    "no-promise-executor-return": "off",
+    "no-await-in-loop": "off",
   },
   settings: {
     "import/resolver": {
